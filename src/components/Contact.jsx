@@ -4,7 +4,7 @@ function Contact() {
   return (
   <div className="container">
       <h1 className='text-center mt-5'>Contact</h1>
-      <h2 className="text-center mt-3 mb-3">Please fill out form and I will get get back to you ASAP!</h2>
+      <h2 className="text-center mt-3 mb-3">Please fill out this form and I will get get back to you ASAP!</h2>
   
     {/* <form className='mt-5' name='contact' method="POST">
     <input type="hidden" name="form-name" value="contact" />
