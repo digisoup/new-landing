@@ -6,8 +6,8 @@ function Contact() {
       <h1 className='text-center mt-3'>Contact</h1>
       <h2 className="text-center mt-3">Please fill out form and I will get get back to you ASAP!</h2>
   
-    <form className='mt-5 
-    ' name='contact' method="post">
+    {/* <form className='mt-5' name='contact' method="POST">
+    <input type="hidden" name="form-name" value="contact" />
       <div className="row mb-3">
         <div className="col-6">
           <input
@@ -38,7 +38,7 @@ function Contact() {
             <div className="col">
               <textarea
                 type="text"
-                name="description"
+                name="message"
                 placeholder="Message"
                 className="form-control"
               />
@@ -58,10 +58,25 @@ function Contact() {
 
       <div className="row">
         <div className="col">
-          <input className="btn btn-primary" type="submit" value="Send" />
+          <button className="btn btn-primary" type="submit">Contact</button>
         </div>
       </div>
-    </form>
+    </form> */}
+    <form action="/contact" name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
     <Link to="/">Back to home</Link>
   </div>
 )
