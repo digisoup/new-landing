@@ -63,7 +63,7 @@ function Contact() {
       </div>
     </form> */}
     <div className='mt-5'>
-    <form name="contact" method="post">
+    <form target="/" name="contact" method="post">
       <div className="row">
         <div className="col">
           <input type="hidden" name="form-name" value="contact" />
