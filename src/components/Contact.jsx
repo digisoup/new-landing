@@ -62,7 +62,7 @@ function Contact() {
         </div>
       </div>
     </form> */}
-    <form action="https://wizardly-banach-a6cedb.netlify.app/contact" name="contact" method="post">
+    <form action="/contact" name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
