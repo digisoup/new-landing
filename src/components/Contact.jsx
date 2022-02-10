@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 function Contact() {
   return (
   <div className="container">
-      <h1 className='text-center mt-3'>Contact</h1>
-      <h2 className="text-center mt-3">Please fill out form and I will get get back to you ASAP!</h2>
+      <h1 className='text-center mt-5'>Contact</h1>
+      <h2 className="text-center mt-3 mb-3">Please fill out form and I will get get back to you ASAP!</h2>
   
     {/* <form className='mt-5' name='contact' method="POST">
     <input type="hidden" name="form-name" value="contact" />
@@ -62,21 +62,29 @@ function Contact() {
         </div>
       </div>
     </form> */}
-    <form action="/contact" name="contact" method="post">
+    <div className='mt-5'>
+    <form action="/" name="contact" method="post">
+      <div className="row">
+        <div className="col">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <label>Your Name: <input type="text" name="name"/></label>
+            <label>Your Name: <input className='form-control' type="text" name="name"/></label>
           </p>
           <p>
-            <label>Your Email: <input type="email" name="email"/></label>
+            <label>Your Email: <input className='form-control' type="email" name="email"/></label>
           </p>
+          </div> 
+          <div className="col">
           <p>
-            <label>Message: <textarea name="message"></textarea></label>
+            <label>Message: <textarea className='form-control text' name="message"></textarea></label>
           </p>
+          </div>
+          </div>
           <p>
-            <button type="submit">Send</button>
+            <button className='btn btn-primary' type="submit">Send</button>
           </p>
         </form>
+        </div>
     <Link to="/">Back to home</Link>
   </div>
 )
