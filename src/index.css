@@ -30,3 +30,9 @@ img {
 label {
   color: orange;
 }
+.home {
+  text-decoration: none;
+}
+.contact {
+  text-decoration: none;
+}
