@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+
 function Contact() {
   return (
   <div className="container">
@@ -85,7 +85,7 @@ function Contact() {
           </p>
         </form>
         </div>
-    <Link to="/">Back to home</Link>
+    
   </div>
 )
 }
