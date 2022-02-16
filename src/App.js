@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <HashRouter>
@@ -8,6 +9,7 @@ function App() {
         <Route path="/" element={<Header />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Navbar />
     </HashRouter>
   );
 }

@@ -11,7 +11,7 @@ function Header() {
      
     </div>
     <div className="row"><Link to="/contact"><button className="btn btn-primary m-5">Contact Me</button></Link></div>
-    <div className="row  mb-5">
+    <div className="row typist mb-5">
     <Typist sentences={['Web Development', 'Mobile Apps', 'Business Tools', 'Digital Marketing', 'Social Media Management']} loop={true} />
     </div>
 
