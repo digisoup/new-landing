@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
 function Contact() {
   return (
-  <div className="container">
-      <h1 className='text-center mt-5'>Contact</h1>
-      <h2 className="text-center mt-3 mb-3">Please fill out this form and I will get get back to you ASAP!</h2>
-  
-    {/* <form className='mt-5' name='contact' method="POST">
+    <div className="container">
+      <h1 className="text-center mt-5">Contact</h1>
+      <h2 className="text-center mt-3 mb-3">
+        Please fill out this form and I will get get back to you ASAP!
+      </h2>
+
+      {/* <form className='mt-5' name='contact' method="POST">
     <input type="hidden" name="form-name" value="contact" />
       <div className="row mb-3">
         <div className="col-6">
@@ -62,32 +64,45 @@ function Contact() {
         </div>
       </div>
     </form> */}
-    <div className='mt-5'>
-    <form target="/" name="contact" method="post">
-      <div className="row">
-        <div className="col">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input className='form-control' type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input className='form-control' type="email" name="email"/></label>
-          </p>
-          </div> 
-          <div className="col">
-          <p>
-            <label>Message: <textarea className='form-control text' name="message"></textarea></label>
-          </p>
+      <div className="mt-5">
+        <form target="/" name="contact" method="post">
+          <div className="row">
+            <div className="col">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <label>
+                  Your Name:{" "}
+                  <input className="form-control" type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Email:{" "}
+                  <input className="form-control" type="email" name="email" />
+                </label>
+              </p>
+            </div>
+            <div className="col">
+              <p>
+                <label>
+                  Message:{" "}
+                  <textarea
+                    className="form-control text"
+                    name="message"
+                  ></textarea>
+                </label>
+              </p>
+            </div>
           </div>
-          </div>
           <p>
-            <button className='btn btn-primary' type="submit">Send</button>
+            <button className="btn btn-primary" type="submit">
+              Send
+            </button>
           </p>
         </form>
-        </div>
-    
-  </div>
-)
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
