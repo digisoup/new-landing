@@ -14,11 +14,13 @@ function Header() {
       <div className="row typist mb-5">
         <Typist
           sentences={[
-            "Cross-Platform Web Development",
+            "Cross-Platform Web Applications",
             "Native Mobile Apps",
             "Business Tools",
             "Digital Marketing",
-            "Social Media Management, Website Management",
+            "Social Media Management",
+            "Website Management",
+            "IOT",
           ]}
           loop={true}
         />
